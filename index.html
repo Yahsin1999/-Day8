@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>狗狗歲數計算器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🐾 狗狗歲數計算器</h1>
+    <p>請輸入狗狗的出生日期、犬種與體重（公斤）來計算狗狗年齡與相當於人類的年齡。</p>
+
+    <label>出生日期</label>
+    <input type="date" id="dob">
+
+    <label>犬種</label>
+    <select id="breed">
+        <option value="small">小型犬（吉娃娃、馬爾濟斯）</option>
+        <option value="medium">中型犬（柴犬、柯基、米克斯）</option>
+        <option value="large">大型犬（拉布拉多、黃金獵犬）</option>
+        <option value="giant">巨型犬（大丹犬、聖伯納犬）</option>
+    </select>
+
+    <label>體重（公斤）</label>
+    <input type="number" id="weight" min="1" placeholder="例如：8">
+
+    <button onclick="calculateDogAge()">計算</button>
+
+    <div id="result"></div>
+
+    <div class="stage-chart" id="stageChart">
+        <div class="stage" id="puppy">幼年</div>
+        <div class="stage" id="adult">成年</div>
+        <div class="stage" id="mature">中年</div>
+        <div class="stage" id="senior">老年</div>
+    </div>
+
+    <p class="note">※ 結果僅為估算，請諮詢獸醫。</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
