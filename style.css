@@ -1,6 +1,6 @@
 body {
     font-family: "Noto Sans TC", sans-serif;
-    background: #faf9f6;
+    background: #f3efe7; /* 大地色背景 */
     padding: 20px;
 }
 
@@ -8,20 +8,22 @@ body {
     max-width: 520px;
     margin: auto;
     padding: 20px;
-    background: white;
+    background: #fffdf7;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 2px solid #d6c7b4;
 }
 
 h1 {
     text-align: center;
-    color: #444;
+    color: #5a4633; /* 大地咖啡色 */
 }
 
 label {
     display: block;
     margin-top: 14px;
     font-weight: bold;
+    color: #6b5844;
 }
 
 input, select {
@@ -29,7 +31,8 @@ input, select {
     padding: 10px;
     margin-top: 6px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #b8a99a;
+    background: #fffaf3;
     font-size: 16px;
 }
 
@@ -38,26 +41,27 @@ button {
     margin-top: 20px;
     padding: 12px;
     font-size: 18px;
-    background: #ffb347;
+    background: #c8a27a; 
+    color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
 }
 
 button:hover {
-    background: #ff9933;
+    background: #b48c63;
 }
 
 #result {
     margin-top: 20px;
     font-size: 18px;
-    background: #fff3d4;
+    background: #f0e4d3;
     padding: 15px;
     border-radius: 10px;
     display: none;
 }
 
-/* 年齡階段動畫 */
+/* 年齡階段配色 — 大地色 */
 
 .stage-chart {
     display: flex;
@@ -69,21 +73,22 @@ button:hover {
     width: 22%;
     padding: 10px;
     text-align: center;
-    background: #e1e1e1;
+    background: #dcd2c5;
     border-radius: 10px;
-    opacity: 0.5;
+    opacity: 0.6;
     transition: 0.4s;
+    color: #5a4633;
 }
 
 .stage.active {
-    background: #ffcc66;
+    background: #e7bb7c;
     opacity: 1;
     transform: scale(1.05);
 }
 
 .note {
     margin-top: 20px;
-    color: #888;
+    color: #7b6a58;
     font-size: 14px;
     text-align: center;
 }
